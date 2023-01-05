@@ -1,9 +1,6 @@
 /*
 Student Name: Nathaniel Posesorsky
-Student ID:260803332
  */
-
-package CCCS315.CCCS315_Assignment.CCCS315_A2;
 
 public class InsertionSort {
     /***
