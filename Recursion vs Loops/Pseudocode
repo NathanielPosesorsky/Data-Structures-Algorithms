@@ -1,0 +1,28 @@
+Pseudocode:
+Algorithm minFinder is
+input: Integer Array arr
+output: Integer index
+int index equals 0
+int min equals Array arr at element 0
+for int i=0 until i is smaller than Array arr length
+if arr at i is smaller than int min do
+int min equals Array arr at i
+int index equals i
+increment i
+return int index
+
+
+Pseudocode:
+Algorithm minFinder_recursive is
+input: Integer Array arr
+Integer min
+Integer minIndex
+Integer currentIndex
+output: minFinder_recursive algorithm recursively
+Integer minIndex
+if currentIndex equals Array arr length minus 1
+return int minIndex
+if int min is bigger than Array arr at element currentIndex
+int min equals Array arr at element currentIndex
+int minIndex equals int currentIndex
+return algorithm minFinder_recursive recursively
