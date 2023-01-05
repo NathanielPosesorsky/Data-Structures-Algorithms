@@ -1,0 +1,31 @@
+public static int minFinder(int[] arr){
+ int index = 0; // O(n) = 1
+ int min = arr[0]; // sets min to the first value of the array // O(n) = 1
+ for(int i=0; i<arr.length;i++){ // for every i, // O(n) = n+1
+ if(arr[i]<min){ // if the value of the array at i is smaller than the min // O(n) = n(n) = n^2
+ min = arr[i]; // min becomes the value at i // O(n) = (n)(1) = n
+ index = i; // the index of that new value is stored to index // O(n) = (n)(1) = n
+ }
+ }
+ return index; // returns the index of the min value
+}
+// O(n) = 1 + 1 +n +1 + n^2 + n + n = n^2 +3n + 3 -> Polynomial of Order 2
+
+
+public static int minFinder_recursive(int[] arr,int min, int minIndex, int currentIndex){
+ // O(n) = n
+ if(currentIndex == arr.length-1) // if you went through the entire array at the index is the last element
+ return minIndex; // return the current minIndex
+ // O(n) = n
+ if (min > arr[currentIndex]) { // if the min is bigger than the element of the array at the current index, 
+ min = arr[currentIndex]; // update the min to that new value // O(n) = 1
+ minIndex = currentIndex; // update the minIndex to that new index // O(n) = 1
+ }
+ return minFinder_recursive(arr,min,minIndex,currentIndex+1); //recursive call using currentindex+1
+}
+// O(n) = n + n + 1 + 1 = 2n+2-> Polynomial of Order 1
+
+
+Conclusion:
+Since the recursive method is a polynomial of order 1 and the non-recursive method is a polynomial of 
+order 2, the minFinder_recursive method is more time efficient than the minFinder method
