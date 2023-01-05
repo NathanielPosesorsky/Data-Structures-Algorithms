@@ -1,14 +1,12 @@
 /*
 Student Name: Nathaniel Posesorsky
-Student ID:260803332
  */
 
-package CCCS315.CCCS315_Assignment.CCCS315_A2;
 
 import java.util.Scanner;
 
 
-public class CCCS315_A2_P1_INT_STACK {
+public class Stack {
 
     // class defining the properties of a Stack
     private static class IntStack {
