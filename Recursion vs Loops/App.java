@@ -1,6 +1,5 @@
 /*
 Student Name: Nathaniel Posesorsky
-Student ID:260803332
  */
 package CCCS315.CCCS315_Assignment;
 
